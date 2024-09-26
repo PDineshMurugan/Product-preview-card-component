@@ -1,0 +1,95 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+    font-family: "Fraunces", serif;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    width: 700px;
+    height: 500px;
+    position: relative;
+   top: 100px;
+   background-color: white;
+   border-radius: 20px;
+
+}
+.container .content{
+    padding: 20px;
+    width: 100%;
+}
+.container .profile {
+
+        background-image: url(images/image-product-desktop.jpg);
+        width: 500px;
+        height: 500px;
+        border-radius: 20px 0px 0px 20px;
+        background-size: 350px 500px; /* Set the background image to match the element's dimensions */
+        background-position: center;
+        background-repeat: no-repeat;
+    
+}
+s{
+    opacity: 70%;
+}
+.container span{
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+    opacity: 70%;
+}
+.container h1{
+    font-size: 30px;
+}
+.green{
+    margin: 0;
+    margin-top: 15px;
+    color: hsl(158, 36%, 37%);
+}
+.button{
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    background-color: hsl(157, 36%, 23%);
+    font-weight: 500;
+}
+
+    @media only screen and (max-width: 415px) {
+    /* Mobile styles go here */
+    body{
+        margin: 0;
+        background-color: hsl(30, 38%, 92%);
+        font-family: "Montserrat", sans-serif;
+        font-family: "Fraunces", serif;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 870px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        top: 0;
+    }
+    .container .profile{
+        background-image: url("images/image-product-mobile.jpg");
+        border-radius: 20px 20px 0px 0px;
+        width: 400px;
+        height: 400px;
+        background-size: auto;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .content{
+        width: 100%; 
+        box-sizing: border-box;  
+        padding: 0 10px; 
+        overflow-wrap: break-word;
+    }
+
+    }
+
